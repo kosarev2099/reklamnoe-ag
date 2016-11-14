@@ -1,0 +1,4 @@
+/*
+ * author: Timur Valiyev | email: v.timur8484@gmail.com | website: www.web-pro84.ru
+ */
+.team{margin:30px 0 0;padding:30px 0 0;/* background:#fff */color: white;}.team-text{display:block;margin:15px 0 0;padding:0;font-size:18px}.team-desc{padding:25px 0}.team-name{font-size:23px}.team-position{font-size:18px}.team-thumb{display:block;float:left;margin:0 8px 8px 0;opacity:.5}.team-thumb.active,.team-thumb:hover{opacity:1}@media (min-width:768px){.team{position:relative;margin: 65px 0 0;}.team:before{content:'';display:block;position:absolute;top:-100px;left:50%;width:0;height:0;margin-left:-1500px;/* border-bottom:100px solid #fff; *//* border-left:3000px solid transparent */}.team-wrap-thumb{width:60px;float:right;margin:-50px 0 50px}}@media (min-width:992px){.team{padding:30px 0 0}.team-right{width:40%;float:right}.team-left{float:left;width:60%}.team-img{margin-top:100px}.team-title{font-size:26pt}}

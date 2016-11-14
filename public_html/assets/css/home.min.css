@@ -1,0 +1,6 @@
+/* author: Timur Valiyev | email: v.timur8484@gmail.com | website: www.web-pro84.ru */
+
+.home{color:#fff;padding-bottom:15px}.home-title{margin-top:30px}.home-ogilvy{text-align:right}.home-brand{margin-top:15px;text-align:center}.home-brand-img{margin:8px}.home-brand-text{margin:0;font-size:13pt}@media (min-width:768px){.home-brand,.home-title{margin-top:150px}.home-brand-text{font-size:16pt;font-family:'HelveticaThin';display: none;}}@media (min-width:1200px){.home-brand,.home-title{margin-top:235px;line-height: 1.2;font-size: 45px;letter-spacing: -0.1px;font-weight: 100;font-family: -apple-system, BlinkMacSystemFont, Roboto, Open Sans, Helvetica Neue, sans-serif;}}
+.home-brand {
+    display: none;
+}

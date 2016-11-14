@@ -1,0 +1,1494 @@
+@import url('font/font.css');
+@import url('jquery.beforeafter.min.css');
+*{
+	margin: 0;
+	padding: 0;
+	zoom:1;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	-webkit-appearance: none;
+}
+body{
+	font-family: "Avenir Next Cyr W00 Regular";
+	line-height: 26px;
+	font-size: 16px;
+    min-width: 1000px;
+}
+a img{
+	border: none;
+}
+p{
+	margin-bottom: 30px;
+}
+*:focus{
+	outline: none;
+}
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6{
+	font-weight: normal;
+}
+h1, .h1{
+	font-size: 90px;
+	line-height: 90px;
+	margin-bottom: 30px;
+}
+h2, .h2{
+	font-size: 60px;
+	line-height: 64px;
+	margin-bottom: 20px;
+}
+h3, .h3{
+	font-size: 40px;
+	line-height: 50px;
+}
+h4, .h4{
+	font-size: 30px;
+	line-height: 36px;
+}
+h5, .h5{
+	font-size: 20px;
+	line-height: 26px;
+}
+.ups{
+	text-transform: uppercase;
+}
+b, strong{
+	font-family: "Avenir Next Cyr W00 Bold";
+	font-weight: normal;
+}
+.clearfix:after,
+.clearfix:before{
+	content: '\0020';
+	display: table;
+	clear: both;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    padding: 0;
+    border: 0
+}
+
+.mc-container{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+
+.mc-section{
+	height: 950px;
+}
+.section-1{
+	padding-top: 130px;
+	height: 1051px;
+	background: url(img/fa-page.jpg) no-repeat center 0;
+	background-size: cover;
+	color: #fff;
+}
+.section-2{
+	color: #7f7f7f;
+	height: 848px;
+	position: relative;
+	z-index: 10;
+	background: url(img/fa-face2.jpg) no-repeat center bottom;
+	background-size: 100% auto;
+}
+.section-3{
+	background: #FF1D69 url(img/scarlet-bg.jpg) no-repeat center top;
+	background-size: 100% auto;
+	color: #fff;
+	height:940px;
+	padding-top: 72px;
+	position: relative;
+	z-index: 10;
+}
+
+.section-5{
+	color: #282828;
+	height: auto;
+	padding-bottom: 116px;
+	background: url(img/face-moscow.jpg) no-repeat center bottom;
+}
+.sectionMail{
+	background: url(img/mail-bg.jpg) no-repeat center top;
+	padding-top: 210px;
+}
+.sectionContact{
+	padding-top: 76px;
+	background: url(img/sectionContact.jpg) no-repeat center top;
+	position: relative;
+	z-index: 10;
+}
+.mcRotatot{
+	background: url(img/rotator-bg.jpg) no-repeat center;
+	height: 1051px;
+	color: #fff;
+	padding-top: 100px;
+}
+.sectionFooter{
+	background-color: #131313;
+	padding-top: 60px;
+}
+.mc-logo{
+	height: 33px;
+	width:305px;
+	background: url(img/fa-mac.png) no-repeat 0 0;
+}
+.mc-logo ins{
+	display: none;
+}
+
+
+
+.absolute-content{
+	top: 0;
+	bottom: 0;
+	width: 50%;
+	position: absolute;
+	z-index: 1024;
+}
+.absolute-left{
+	right: 50%;
+}
+.absolute-right{
+	left: 50%;
+}
+.mc-col{
+
+}
+.mc-col-left{
+	float: left;
+}
+.mc-col-right{
+	float: right;
+}
+
+.mc-specific{
+	font-size: 24px;
+	text-transform: uppercase;
+	line-height: 30px;
+	margin-bottom: 50px;
+}
+.mc-specific-item{
+	margin-bottom: 18px;
+	padding-left: 26px;
+}
+.mc-specific-item:before{
+	content: '\0020';
+	display: block;
+	width: 18px;
+	height: 3px;
+	background-color: #fff;
+	float: left;
+	margin:14px 0 0 -26px;
+}
+.mc-social{
+	text-align: center;
+}
+.mc-social-item{
+	display: inline-block;
+	text-decoration: none;
+	width: 35px;
+	height: 35px;
+	margin: 0 20px;
+	background-image: url(img/fa-social.png);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+.mc-social-item ins{
+	display: none;
+}
+.mc-social-insta{
+	background-position: -73px 0;
+}
+.mc-social-face{
+	background-position: -145px 0;
+}
+.mcFooter-nav{
+	text-align: center;
+	text-transform: uppercase;
+}
+.mcFooter-nav-item{
+	color: #fff;
+	font-size: 20px;
+	display: inline-block;
+	margin: 0 40px;
+	text-decoration: none;
+	cursor: pointer;
+}
+.mcFooter-nav-item:hover{
+	text-decoration: underline;
+}
+.mc-btn{
+	display: inline-block;
+	*display: inline;
+	color: #b87057;
+	font-family: "Avenir Next Cyr W00 Bold";
+	font-size: 30px;
+	text-transform: uppercase;
+	cursor: pointer;
+	background-color: #fff;
+	text-decoration: none;
+	white-space: nowrap;
+	line-height: 80px;
+	border: none;
+	padding: 0 66px;
+	border-radius: 60px;
+	-moz-border-radius: 60px;
+	-webkit-border-radius: 60px;
+	box-shadow: 0 0 19px #fff;
+	-moz-box-shadow: 0 0 19px #fff;
+	-webkit-box-shadow: 0 0 19px #fff;
+}
+.mc-btn-scarlet{
+	background-color: #ff2079;
+	color: #fff;
+}
+.mc-btn-block{
+	display: block;
+	width: 100%;
+}
+.mcFace-map{
+	position: absolute;
+	z-index: 999;
+	overflow: hidden;
+	padding-top: 7px;
+}
+.mcFace-map-caption{
+	font-size: 24px;
+	color: #e29676;
+	line-height: 31px;
+	margin-bottom: 8px;
+	text-transform: uppercase;
+	font-family: "Avenir Next Cyr W00 Bold";
+}
+.mcFace-message{
+	font-size: 16px;
+	color: #656565;
+	line-height: 22px;
+}
+.mcFace-cursor-right{
+	padding-right: 260px;
+}
+.mcFace-cursor-left{
+	padding-left: 260px;
+}
+.mcFace-cursor-dotted{
+	background: url(img/fa-dottet.png) no-repeat center;
+	background-size: auto 100%;
+	width: 41px;
+	height: 40px;
+	display: block;
+	position: relative;
+	z-index: 9;
+	margin-top: -7px;
+}
+.mcFace-cursor-dotted:after{
+	content: '\0020';
+	display: block;
+	height: 2px;
+	background-color: #d4d4d4;
+	top: 19px;
+	width: 200px;
+	position: absolute;
+	z-index: 50;
+	display: none;
+}
+.mcFace-cursor-line:after{
+	display: block;
+}
+.mcFace-cursor-right .mcFace-cursor-dotted{
+	float: right;
+	margin-right: -59px;
+}
+.mcFace-cursor-left .mcFace-cursor-dotted{
+	float: left;
+	margin-left: -59px;
+}
+.mcFace-cursor-right .mcFace-cursor-dotted:after{
+	left: 51px;
+}
+.mcFace-cursor-left .mcFace-cursor-dotted:after{
+	right: 51px;
+}
+#mcFace-1{
+	width: 405px;
+	top: 14px;
+	left: 50%;
+	margin-left: 195px;
+	padding-left: 58px;
+}
+#mcFace-2{
+	top: 410px;
+	right: 50%;
+	width: 410px;
+	margin-right: 123px;
+	padding-right: 136px;
+}
+#mcFace-3{
+	top: 308px;
+	left: 50%;
+	width: 315px;
+	margin-left: 288px;
+	padding-left: 113px;
+}
+#mcFace-4{
+	top: 604px;
+	right: 50%;
+	width: 480px;
+	margin-right: 35px;
+	padding-right: 160px;
+}
+#mcFace-5{
+	top: 542px;
+	left: 50%;
+	width: 400px;
+	margin-left: 215px;
+	padding-left: 141px;
+}
+
+.mc-price{
+    position: relative;
+	font-size: 150px;
+	line-height: 121px;
+    font-family: "Avenir Next Cyr W00 Bold";
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	white-space: nowrap;
+}
+.mc-price small{
+    font-size: 64px;
+    line-height: 1em;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+.mc-price-sm{
+	font-size: 56px;
+	line-height: 43px;
+	padding-left: 33px;
+	background-size: 19px auto;
+
+}
+.mc-price-sml{
+	font-size: 80px;
+	line-height: 61px;
+	background-size: 28px auto;
+}
+.mc-price-sml small{
+    font-size: 34px;
+    line-height: 1em;
+}
+.mc-price-cm{
+    position: relative;
+	font-size: 90px;
+	line-height: 67px;
+	background-size: 34px auto;
+}
+.mc-price-cm small{
+    font-size: 38px;
+    line-height: 1em;
+}
+.mc-price-old{
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	padding: 0 14px;
+}
+.mc-price-old:after{
+	content: '\0020';
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+	height: 30px;
+	background: url(img/fa-old-line.png) no-repeat center;
+}
+.mc-present{
+	padding-top: 35px;
+	font-size: 40px;
+	line-height: 44px;
+	text-transform: uppercase;
+}
+.mc-present-ico{
+	padding-left: 154px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-image: url(img/fa-present.png);
+}
+.mc-present-scarlet{
+	background-image: url(img/fa-present-scarlet.png);
+	padding-left: 105px;
+	padding-top: 0;
+	font-size: 50px;
+	line-height: 57px;
+}
+.mc-present .sup{
+	font-size: 27px;
+	position: relative;
+	top: -8px;
+}
+.mc-present-sm{
+	padding-top: 4px;
+}
+.mc-present-sm.mc-present-ico{
+	padding-left: 60px;
+	background: url(img/fa-present-sm.png) no-repeat 0 0;
+}
+.pc-present-sm-caption{
+	font-size: 24px;
+	line-height: 25px;
+	margin-bottom: 20px;
+}
+.spongeEffect-marker{
+	position: absolute;
+	color: #fff;
+	z-index: 400;
+}
+#spongeEffect-marker-1{
+	top: 72px;
+	left: 0;
+	width: 270px;
+}
+#spongeEffect-marker-2{
+	top: 773px;
+	left: 350px;
+	width: 290px;
+}
+#spongeEffect-marker-3{
+	top: 59px;
+	right: 283px;
+	width: 324px;
+}
+#spongeEffect-marker-4{
+	top: 758px;
+	right: 63px;
+	width: 250px;
+}
+.af-gallery{
+	margin-bottom: 83px;
+}
+.af-gallery-row:after,
+.af-gallery-row:before,
+.af-gallery-item:after,
+.af-gallery-item:before{
+	content: '\0020';
+	display: table;
+	clear: both;
+}
+.af-gallery-item{
+	float: left;
+	height: 720px;
+	width: 33.333333%;
+}
+.af-gallery-content{
+	width: 310px;
+}
+.af-center{
+	margin: 0 auto;
+}
+.af-right{
+	float: right;
+}
+.af-image{
+	line-height: 0;
+	margin-bottom: 34px;
+}
+.af-image img{
+	width: 310px;
+}
+.af-gallery-caption{
+	color: #e29676;
+	font-size: 24px;
+	font-family: "Avenir Next Cyr W00 Bold";
+	text-transform: uppercase;
+	line-height: 32px;
+	margin-bottom: 18px;
+}
+.af-gallery-list{
+	font-size: 16px;
+	color: #656565;
+}
+.af-gallery-list-item{
+	padding-left: 22px;
+	line-height: 21px;
+	margin-bottom: 8px;
+}
+.af-gallery-list-item:before{
+	content: '\0020';
+	display: block;
+	width: 10px;
+	height: 10px;
+	background-color: #000;
+	border-radius: 35px;
+	-moz-border-radius: 35px;
+	-webkit-border-radius: 35px;
+	float: left;
+	margin-left: -22px;
+	margin-top: 6px;
+}
+.video_modal{
+	position: fixed;
+	display: none;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	overflow-x: hidden;
+	overflow-y:auto;  
+	background: rgba(0,0,0,0.8);
+	z-index: 1999;
+	opacity: 0;
+}
+.video_modal-wraper{
+	width: 100%;
+	margin: 0 auto;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+.video_modal-body{
+	width: 53%;
+	margin: 130px auto;
+}
+.video_modal-close{
+	position: absolute;
+	z-index: 1000;
+	cursor: pointer;
+	width: 60px;
+	height: 60px;
+	right: -100px;
+	top: -37px;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	background: url(img/fa-close.png) no-repeat center;
+}
+.video_modal-close:hover{
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+}
+.video_modal-wraper iframe{
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.product-nav{
+	position: relative;
+	z-index: 10;
+	width: 100%;
+	height: 668px;
+}
+.product-nav-li{
+	width: 138px;
+	bottom: 0;
+	position: absolute;
+	z-index: 10;
+	cursor: pointer;
+	line-height: 0;
+}
+.product-nav-li:before{
+	content: '\0020';
+	display: block;
+	position: absolute;
+	bottom: 0;
+	margin: 0 auto;
+	z-index: -1;
+}
+.product-nav-li:after{
+	content: '\0020';
+	display: block;
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	left: 40px;
+	right: 0;
+	bottom: -20px;
+	background-image: url(img/navDot.png);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+.product-nav-li-transition{
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+}
+.product-nav-li-transition  img{
+	width: 100%;
+}
+.product-nav-li:hover .product-nav-li-transition,
+.product-nav-li.active .product-nav-li-transition{
+	margin-top: -25px;
+}
+.product-nav-li.active:after{
+	background-position: -58px 0;
+}
+.product-brush{
+	left: -37px;
+	top: 100px;
+	text-align: center;
+}
+.product-creme{
+	left: 78px;
+	top: 330px;
+	width: 160px;
+	text-align: right;
+}
+.product-sponge{
+	width: 173px;
+	top: 376px;
+	left: 247px;
+	text-align: center;
+}
+.product-mac{
+	z-index: 5;
+	top: 131px;
+	left: 172px;
+	width: 522px;
+}
+.product-creme{
+	text-align: center;
+}
+.product-brush:before{
+	width: 152px;
+	height: 34px;
+	background: url(img/brush-shadow.png) no-repeat 0;
+	bottom: 36px;
+	left: -5px;
+}
+.product-creme:before{
+	background: url(img/creme-shadow.png) no-repeat 0 0;
+	width: 177px;
+	height: 39px;
+	bottom: 38px;
+	left: -15px;
+}
+.product-sponge:before{
+	width: 298px;
+	height: 48px;
+	background: url(img/sponge-shadow.png) no-repeat 0 0;
+	left: -57px;
+	bottom: 40px;
+}
+.product-mac:before{
+	background: url(img/mac-shadow.png) no-repeat 0 0;
+	width: 585px;
+	height: 129px;
+	left: -5px;
+	bottom: 4px;
+}
+.product-creme:after{
+	left: 50px;
+}
+.product-sponge:after{
+	left: 30px;
+}
+.product-mac:after{
+	left: 242px;
+}
+.mcVideo{
+	position: relative;
+	height: 950px;
+}
+.mcVideoSlider{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	height: 100%;
+	bottom: 0;
+	z-index: 500;
+	overflow: hidden;
+}
+.mcVideoSliderLine{
+	position: absolute;
+	top: 0;
+	z-index: 500;
+}
+.mcVideoList{
+	position: absolute;
+	z-index: 999;
+	height: 246px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+}
+.mcVideoList-li{
+	display: block;
+	float: left;
+	width: 272px;
+	height: 225px;
+	margin: 0 19px;
+	cursor: pointer;
+}
+.mcVideoListAll{
+	display: inline-block;
+}
+.mcVideoList-li-screen{
+	height: 132px;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 22px;
+	border:2px solid transparent;
+}
+.mcVideoList-li-screen:after{
+	content: '\0020';
+	display: block;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	background: #000 url(img/fa-play-sm.png) no-repeat center;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+.mcVideoList-li.active:hover{
+	cursor: default;
+}
+.mcVideoList-li.active .mcVideoList-li-screen,
+.mcVideoList-li:hover .mcVideoList-li-screen{
+	border-color: #d89072;
+}
+.mcVideoList-li.active .mcVideoList-li-screen:after,
+.mcVideoList-li:hover .mcVideoList-li-screen:after{
+	background-color: transparent;
+}
+.mcVideoList-li-caption{
+	color: #fff;
+	font-size: 24px;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 27px;
+}
+.mcVideoSlide-item{
+	float: left;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: #fff;
+	padding-top: 85px;
+	position: relative;
+	cursor: pointer;
+}
+.mcVideoSlidePlay{
+	display: block;
+	width: 150px;
+	height: 150px;
+	background: url(img/fa-play.png) no-repeat center;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	-webkit-transition: 0.5s;
+}
+.mcVideoSlidePlay:hover{
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+}
+.mcM-list-item{
+	color: #282828;
+	font-size: 20px;
+	text-transform: uppercase;
+	line-height: 31px;
+	margin-bottom: 67px;
+}
+.mcM-list-item-ico{
+	padding-left: 108px;
+}
+.mcM-list-item-ico:after,
+.mcM-list-item-ico:before{
+	content: '\0020';
+	display: table;
+	clear: both;
+}
+.mcM-list-item-ico:before{
+	content: '\0020';
+	display: block;
+	float: left;
+	background-image: url(img/mc-list-sprite.png);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	width: 82px;
+	height: 80px;
+	margin-left: -108px;
+}
+.mcM-list-call:before{
+	background-position: 0 -143px; 
+}
+.mcM-list-money:before{
+	background-position: 0 -290px; 
+}
+.mcForm-row{
+	margin-bottom: 20px;
+}
+.mcForm-label{
+	color: #656565;
+	font-size: 20px;
+	line-height: 22px;
+	margin-bottom: 9px;
+}
+.mcControl{
+	width: 100%;
+	border: 2px solid #ff2079;
+	height: 80px;
+	border-radius: 80px;
+	-moz-border-radius: 80px;
+	-webkit-border-radius: 80px;
+	font-size: 40px;
+	background-color: #f4f4f4;
+	padding: 0 50px;
+	color: #282828;
+	text-align: center;
+	box-shadow: inset 0px 5px 10px #999;
+	-moz-box-shadow: inset 0px 5px 10px #999;
+	-webkit-box-shadow: inset 0px 5px 10px #999;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+}
+.mcControl:focus{
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+input, textarea{
+	font-family: "Avenir Next Cyr W00 Regular";
+}
+.bant{
+	background: url(img/bant.png) no-repeat 0 0;
+	background-size: 100% auto;
+	width: 327px;
+	height: 270px;
+	position: absolute;
+	z-index: 1500;
+}
+.bant-one{
+	top: -102px;
+	left: 228px;
+}
+.bant-two{
+	top: -92px;
+	right: 63px;
+
+}
+.footer-messager-container{
+	height: 520px;
+	margin-bottom: 0px;
+	position: relative;
+	z-index: 10;
+}
+.footer-message{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	padding: 0 120px;
+	background-color: #131313;
+	z-index: 999;
+	opacity: 0;
+	display: none;
+	font-size: 14px;
+	color: #fff;
+	line-height: 32px;
+	z-index: 1000;
+}
+.footer-message-content{
+	min-height: 100%;
+	height: 100%;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+.footer-message-close{
+	width: 60px;
+	height: 60px;
+	background: url(img/fa-close.png) no-repeat center;
+	cursor: pointer;
+	position: absolute;
+	z-index: 100;
+	right: 30px;
+	top: -30px;
+}
+.footer-message p{
+	margin-bottom: 15px;
+}
+.all-right{
+	text-align: right;
+}
+.all-left{
+	text-align: left;
+}
+.all-center{
+	text-align: center;
+}
+.m-1{
+	margin-bottom: 10px;
+}
+.m-3{
+	margin-bottom: 30px;
+}
+.m-4{
+	margin-bottom: 40px;
+}
+.m-5{
+	margin-bottom: 50px;
+}
+.m-6{
+	margin-bottom: 60px;
+}
+.m-8{
+	margin-bottom: 80px;
+}
+.m-f{
+	margin-bottom: 0;
+}
+.m-p{
+	margin-bottom: 5px;
+}
+.m-1p{
+	margin-bottom: 15px;
+}
+.m-3p{
+	margin-bottom: 35px;
+}
+.m-6p{
+	margin-bottom: 65px;
+}
+.m-8p{
+	margin-bottom: 85px;
+}
+.m-9p{
+	margin-bottom: 95px;
+}
+.f-45{
+	font-size: 45px;
+}
+.f-59{
+	font-size: 59px;
+	line-height: 63px;
+}
+.f-70{
+	font-size: 70px;
+	line-height: 65px;
+}
+.f-78{
+	font-size: 78px;
+	line-height: 69px;
+}
+/* color */
+
+.cBrown{
+	color: #813e26;
+}
+.cBrownLight{
+	color: #bc937c;
+}
+.cCloud{
+	color: #fff;
+}
+.cCreme{
+	color: #e29676;
+}
+.cDark{
+	color: #656565;
+}
+.cSky{
+	color: #004b8a;
+}
+.cDark-x2{
+	color: #282828;
+}
+.cScarlet{
+	color: #ff4e91;
+}
+.cMilk{
+	color: #fff;
+}
+.mac-img-1{
+	margin:85px 0 0 -140px;
+	width: 100%;
+	max-width: 852px;
+}
+.mcRotator-col-right-head{
+	height: 230px;
+	margin-top: -230px;
+}
+.mcRotator-item-info{
+	position: relative;
+	margin-bottom: 70px;
+}
+.mcRotator-item-info:after{
+	content: '\0020';
+	display: block;
+	background-color: #cbb1a1;
+	height: 1px;
+	width: 190px;
+	position: absolute;
+	bottom: -30px;
+	left: 0;
+}
+.review-body{
+	width: 600px;
+}
+.sectionMail-body{
+	padding: 0 78px;
+}
+.section_1-col-left{
+	width: 58.66666666666667%; /* 704px */
+}
+.section_1-col-right{
+	width: 41.33333333333333%; /* 496px */
+}
+.section_3-col-left{
+	width: 50%; /* 600px */
+}
+.mcRotator-col-left{
+	width: 55.83333333333333%;	/* 670px */
+}
+.mcRotator-col-right{
+	width: 43.33333333333333%; /* 520px */
+	padding-top: 120px;
+}
+.sectionMail-col-left{
+	width: 50.38314176245211%; /* 526px */
+}
+.sectionMail-col-right{
+	width: 41.18773946360153%; /* 430px */
+}
+.sectionContact-col-right{
+	width: 520px;
+}
+@media screen and (max-width: 1366px) {
+	body{
+		font-size: 14px;
+		line-height: 22px;
+	}
+	h1, .h1{
+		font-size: 64px;
+		line-height: 71px;
+	}
+	h2, .h2{
+		font-size: 42px;
+	}
+	h3, .h3{
+		font-size: 28px;
+		line-height: 36px;
+	}
+	h4, .h4{
+		font-size: 21px;
+		line-height: 24px;
+	}
+	h5, .h5{
+		font-size: 14px;
+		line-height: 20px;
+	}
+    .mc-container{
+    	width: 854px;
+    }
+    .section-1{
+    	padding-top: 92px;
+    	height: 760px;
+    	background-size: auto 760px;
+    }
+    .section-2{
+    	height: 670px;
+    	background-size: 1415px auto;
+    }
+    .section-3{
+    	height: 712px;
+    	background-size: 1440px;
+    }
+    .mc-logo{
+    	background-size: auto 26px;
+    	height: 26px;
+    	width: 250px;
+    }
+    .mac-img-1{
+    	margin-left: -101px;
+    	margin-top: 62px;
+    	width: 579px;
+    }
+    .mc-specific{
+    	font-size: 17px;
+    	line-height: 15px;
+    }
+	.mc-specific-item{
+		padding-left: 20px;
+	}
+	.mc-specific-item:before{
+		width: 14px;
+		margin-top: 6px;
+		margin-left: -20px;
+	}
+	.mc-btn{
+		font-size: 21px;
+		line-height: 57px;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	.mcFace-map-caption{
+		font-size: 17px;
+		line-height: 21px;
+		margin-bottom: 5px;
+	}
+	.mcFace-message{
+		font-size: 13px;
+		line-height: 16px;
+	}
+	.mcFace-cursor-dotted{
+		width: 35px;
+		height: 30px;
+	}
+	.mcFace-cursor-dotted:after{
+		height: 1px;
+		top: 14px;
+	}
+	.mcFace-cursor-right .mcFace-cursor-dotted{
+		margin-right: -42px;
+	}
+	.mcFace-cursor-left .mcFace-cursor-dotted{
+		margin-left: -42px;
+	}
+	.mcFace-cursor-right .mcFace-cursor-dotted:after{
+		left: 44px;
+	}
+	.mcFace-cursor-left .mcFace-cursor-dotted:after{
+		right: 44px;
+	}
+	#mcFace-1{
+		padding-left: 50px;
+		margin-left: 160px;
+		top: 78px;
+		width:255px;
+	}
+	#mcFace-2{
+		width: 300px;
+		padding-right: 90px;
+		top: 323px;
+		margin-right: 92px;
+	}
+	#mcFace-3{
+		width: 220px;
+		padding-left: 79px;
+		margin-left: 210px;
+		top: 252px;
+	}
+	#mcFace-4{
+		width: 390px;
+		top: 450px;
+		margin-right: 10px;
+	}
+	#mcFace-5{
+		width: 280px;
+		top: 408px;
+		padding-left: 93px;
+		margin-left: 144px;
+	}
+	.bant{
+		width: 228px;
+		height: 192px;
+	}
+	.bant-one{
+		top: -70px;
+		left: 170px;
+	}
+	.mc-present{
+		font-size: 28px;
+		line-height: 30px;
+		padding-top: 25px;
+	}
+	.mc-present-ico{
+		padding-left: 106px;
+		background-size: 82px auto
+	}
+	.mc-present-sm{
+		padding-top: 8px;
+	}
+	.mc-present-sm.mc-present-ico{
+		padding-left: 40px;
+		background-size: 29px auto
+	}
+	.pc-present-sm-caption{
+		font-size: 21px;
+		line-height: 22px;
+	}
+	#spongeEffect-marker-1{
+		top: 62px;
+		left: -41px;
+	}
+	#spongeEffect-marker-2{
+		top: 565px;
+		left: 247px;
+		width:140px;
+	}
+	.mcRotatot{
+		padding-top: 50px;
+		height: 760px;
+		background-size: auto 760px;
+	}
+	.product-nav{
+		height: 515px;
+	}
+	.product-brush{
+		width: 45px;
+		top: 72px;
+		left: 0;
+	}
+	.product-brush:before{
+		left: -52px;
+		bottom: 33px;
+	}
+	.product-creme{
+		top: 250px;
+		left: 65px;
+		width: 92px;
+	}
+	.product-creme:before{
+		left: -45px;
+		bottom: 33px;
+	}
+	.product-sponge{
+		width: 122px;
+		left: 184px;
+		top: 297px;
+	}
+	.product-sponge:before{
+		bottom: 33px;
+		left: -82px;
+	}
+	.product-mac{
+		width: 330px;
+		left: 111px;
+		top: 106px;
+	}
+	.product-mac:before{
+		left: -111px;
+		bottom: 8px;
+	}
+	.product-nav-li:after{
+		left: 0;
+	}
+	.product-creme:after{
+		left: 33px;
+	}
+	.product-sponge:after{
+		left: 12px;
+	}
+	.product-mac:after{
+		left: 182px;
+	}
+	.mcRotator-col-right{
+		padding-top: 0;
+	}
+	.mcRotator-col-right-head{
+		margin-top: -160px;
+		height: 160px;
+	}
+	.mc-price{
+		font-size: 64px;
+		line-height: 49px;
+		background-size: 25px auto;
+	}
+	.mc-price-old{
+		padding: 0 8px;
+		padding-top: 7px;
+		line-height: 27px;
+	}
+	.mc-price-lg{
+		font-size: 113px;
+		line-height: 84px;
+		background-size: 43px auto
+	}
+	.mc-price .mc-price-old{
+		margin-left: 30px;
+	}
+	.mc-price-old:after{
+		background-size: auto 20px;
+	}
+	.mcRotator-item-info{
+		font-size: 14px;
+		line-height: 18px;
+		margin-bottom: 55px;
+        padding-top: 10px;
+	}
+	.mcRotator-item-info p{
+		margin-bottom: 15px;
+	}
+	.af-gallery-content{
+		width: 222px;
+	}
+	.g-before-after .g-img-divider:after{
+		width: 40px;
+		height: 40px;
+		background-size: 40px auto;
+		left: -20px;
+	}
+	.g-before-after{
+		padding-top: 22px;
+	}
+	.g-before-after .g-img-after{
+		top: 22px !important;
+	}
+	.af-gallery-caption{
+		font-size: 17px;
+		line-height: 21px;
+	}
+	.af-image{
+		margin-bottom: 15px;
+	}
+	.af-gallery-list{
+		font-size: 13px;
+		line-height: 14px;
+	}
+	.af-gallery-list-item:before{
+		width: 7px;
+		height: 7px;
+	}
+	.af-gallery-item{
+		height: 533px;
+	}
+	.af-gallery{
+		margin-bottom: 60px;
+	}
+	.review{
+		font-size: 13px;
+		line-height: 18px;
+	}
+	.review-body{
+		width: 427px;
+	}
+	.section-5{
+		background-size: 1380px auto;
+		padding-bottom: 90px;
+	}
+	.mcVideoSlidePlay{
+		width: 105px;
+		height: 105px;
+		background-size: 100% auto;
+	}
+	.sectionMail{
+		background-size: 1360px auto;
+		padding-top: 150px;
+		height: 667px;
+	}
+	.sectionMail-body{
+		padding: 0 50px;
+	}
+	.mcM-list-item{
+		font-size: 15px;
+		line-height: 21px;
+		margin-bottom: 35px;
+	}
+	.mcM-list-item-ico{
+		padding-left: 76px;
+	}
+	.mcM-list-item-ico:before{
+		margin-left: -76px;
+		width: 60px;
+		height: 65px;
+		background-size: 60px auto;
+	}
+	.mcM-list-call:before{
+		background-position: 0 -103px;
+	}
+	.mcM-list-money:before{
+		background-position: 0 -211px;
+	}
+	.sectionContact-col-right{
+		width: 354px;
+	}
+	.sectionContact{
+		background-size: 1370px auto;
+		padding-top: 44px;
+		height: 676px;
+	}
+	
+	.mcControl{
+		height: 57px;
+		font-size: 28px;
+	}
+	.mcForm-label{
+		font-size: 14px;
+	}
+	.mc-present-scarlet{
+
+	}
+	
+	.mcForm-row{
+		margin-bottom: 15px;
+	}
+	
+	#spongeEffect-marker-3{
+		top: 40px;
+		right: 143px;
+	}
+	#spongeEffect-marker-4{
+		top: 528px;
+		right: -31px;
+	}
+	.mc-price-sml{
+		font-size: 56px;
+		background-size: 20px auto;
+	}
+	.mcFooter-nav-item{
+		font-size: 14px;
+		margin: 0 12px;
+	}
+	.f-45{
+		font-size: 32px;
+	}
+	.f-59{
+		font-size: 41px;
+		line-height: 39px;
+	}
+	.f-70{
+		font-size: 48px;
+		line-height: 47px;
+	}
+	.f-78{
+		font-size: 55px;
+		line-height: 50px;
+	}
+	.m-1{
+		margin-bottom: 0;
+	}
+	.m-3{
+		margin-bottom: 25px;
+	}
+	.m-4{
+		margin-bottom: 40px;
+	}
+    .m-5{
+    	margin-bottom: 42px;
+    }
+    .m-6{
+    	margin-bottom: 45px;
+    }
+	.m-1p{
+		margin-bottom: 8px;
+	}
+	.m-6p{
+		margin-bottom: 50px;
+	}
+	.m-3p{
+		margin-bottom: 25px;
+	}
+	.m-8{
+		margin-bottom: 55px;
+	}
+}

@@ -1,0 +1,18 @@
+@font-face {
+	font-family: "Avenir Next Cyr W00 Regular";
+	src: url("avenirRegular.eot"); 
+	src: url("avenirRegular.eot@") format("embedded-opentype"), 
+	url("avenirRegular.woff2.html") format("woff2"), 
+	url("avenirRegular.woff") format("woff"), 
+	url("avenirRegular.ttf") format("truetype"), 
+	url("avenirRegular.svg") format("svg"); 
+}
+@font-face {
+	font-family: "Avenir Next Cyr W00 Bold";
+	src: url("avenirBold.eot"); 
+	src: url("avenirBold.eot@") format("embedded-opentype"), 
+	url("avenirBold.woff2.html") format("woff2"), 
+	url("avenirBold.woff") format("woff"), 
+	url("avenirBold.ttf") format("truetype"), 
+	url("avenirBold.svg") format("svg"); 
+}
